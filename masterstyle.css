@@ -1,0 +1,544 @@
+
+
+.master-layout .sab_banner.overlay:before 
+{
+    background-color: #944641 !important;
+}
+
+.master-layout .city_about_video
+{
+    display: none;
+}
+.master-layout .city_about_fig {
+    position: relative;
+    padding: 0px;
+}
+
+.master-layout .section_heading {
+    border-left: 4px solid #742726 !important;
+   
+}
+.city_senior_team figure
+{
+    border-radius: 10px 10px 0px 0px;
+}
+.city_senior_team img
+{
+    border-radius: 10px 10px 0px 0px;
+}
+
+.city_about_fig figure
+{
+    border-radius: 10px 10px 10px 10px;
+}
+.city_about_fig img
+{
+    border-radius: 10px 10px 10px 10px;
+}
+
+.master-layout .overlay
+{
+    border-radius: 10px;
+    margin: 0px;
+    border: 1px solid #afafaf;
+    background: #;
+}
+  .city_about_wrap_sidepaddng
+{
+  padding: 12px 14px;
+}
+
+.master-layout .city_about_wrap ul li 
+{
+    list-style-type: disc;
+}
+.master-layout .city_about_wrap ul 
+{
+    padding-left: 16px;
+}
+
+.master-layout .categories_list ul li 
+{
+    list-style-type: none !important;
+}
+.master-layout .city_about_wrap {
+    padding: 12px 0px 50px;
+    border-radius: 15px;
+}
+
+.master-layout .city_health2_text.text2 
+{
+  border: none;
+}
+
+
+.master-table .table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  .master-table .table,
+  .master-table .table th,
+  .master-table .table td {
+    border: 1px solid #ccc;
+  }
+  
+  .master-table .table th,
+  .master-table .table td {
+    padding: 0.5rem;
+  }
+  
+  .master-table .table th {
+    position: relative;
+     cursor: grab;
+        user-select: none;
+  }   
+     .master-table .table th:active {
+        cursor: grabbing;
+      }
+  
+  .master-table .resizer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 5px;
+    cursor: col-resize;
+    user-select: none;
+  }
+  
+  .resizer:hover,
+  .resizing {
+    border-right: 2px solid blue;
+  }
+  
+  .master-table .dragging {
+    background-color: #f0f0f0;
+  }
+  .master-table thead th
+  {
+    background-color: #742726;
+    color: #fff;
+  }
+  .master-table .s_no_width
+  {
+    width: 56px;
+  }
+
+  .master-accordian .panel-title > a:before {
+    float: right !important;
+    font-family: FontAwesome;
+    content:"\f068";
+    padding-right: 5px;
+}
+.master-accordian .panel-title > a.collapsed:before {
+    float: right !important;
+    content:"\f067";
+}
+.master-accordian .panel-title > a:hover, 
+.master-accordian .panel-title > a:active, 
+.master-accordian .panel-title > a:focus  {
+    text-decoration:none;
+}
+
+button.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+button.accordion.active, button.accordion:hover {
+    background-color: #F2E0DF;
+}
+
+button.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2212";
+}
+
+div.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-bottom: 4px;
+}
+
+.mb-70 
+{
+    margin-bottom: 70px !important;
+}
+.panel p 
+{
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+
+/*Animated Tabbings*/
+.nav {
+    position: relative;
+    width: 400px;
+    height: 40px;
+    border-radius: 15px;
+    background-color: var(--lightGreen);
+    box-shadow: 2px 4px 6px rgba(0, 42, 50, .1);
+}
+.nav_copy {
+    margin-top: 80px;
+}
+.nav__list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    height: 100%;
+    z-index: 1;
+}
+.nav__item {
+    position: relative;
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.nav__link {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    color: var(--black);
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+}
+.nav_copy .nav__link {
+    transition: color 0.3s ease-in-out;
+}
+.nav__link_active {
+    color: var(--white);
+}
+.nav__slider {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 3px;
+    pointer-events: none;
+    z-index: 0;
+}
+.nav_copy .nav__slider {
+    left: 3px;
+    right: 3px;
+    padding: 0;
+}
+.nav__slider-rect {
+    width: 33.3%;
+    height: 100%;
+    background-color: var(--green);
+    border-radius: 12px;
+    transition: transform 0.4s;
+    box-shadow: 1px 1px 3px rgba(0, 42, 50, .15);
+}
+.nav_copy .nav__slider-rect {
+    position: absolute;
+    top: 3px;
+    left: 0;
+    right: 66.6%;
+    bottom: 3px;
+    height: auto;
+    width: auto;
+    transition: all 0.3s cubic-bezier(1, 0.48, 0.71, 0.96);
+}
+
+
+
+.video-gall .city_project_text {
+    position: absolute;
+    top: 100%;
+    left: 8px;
+    /* right: 30px; */
+    /* z-index: 2;
+    margin-top: -110px; */
+    z-index: 2;
+    
+}
+
+.video-gall .city_project_text h3 {
+    font-size: 18px !important;
+}
+.video-gall .city_project_text h3 
+{
+    line-height: normal;
+}
+
+
+
+
+/* Master Tabbing Animated */
+
+.master-tabs .tabs {
+    /* position:absolute;
+    top:50%;
+    left:50%; */
+    transform:translate(0%,0%);
+    width:100%;
+    height:calc(100% - 150px);
+   
+  }
+  .master-tabs .tabs .tab-header {
+    background:#f5f5f5;
+    padding:10px;
+    display:flex;
+    border-radius: 10px 10px 0px 0px;
+  }
+  .master-tabs .tabs .tab-header > div {
+    position:relative;
+    width:25%;
+    text-align:center;
+    padding:9px 10px;
+    z-index:2;
+    font-weight:600;
+    color:#888;
+    cursor:pointer;
+    transition:all 300ms ease-in-out;
+    border: 1px solid #888;
+    border-radius: 25px;
+    right: 4px;
+    margin: 0px 4px;
+  }
+  .master-tabs .tabs .tab-header > div.active {
+    color:#fff;
+    border: none;
+  }
+  .master-tabs .tabs .tab-indicator {
+    position:absolute;
+    width:calc(25% - 13px);
+    height:40px;
+    background:#742726;
+    top:68px;
+    left:14px;
+    border-radius:20px;
+    transition:all 200ms ease-in-out;
+  }
+  .master-tabs .tabs .tab-body {
+    position:relative;
+    padding:20px;
+    background:#f5f5f5;
+    border-top:1px solid #ddd;
+    height:calc(100% - 150px);
+    overflow:hidden;
+    border-radius: 0px 0px 10px 10px;
+  }
+  .master-tabs .tabs .tab-body > div {
+    position:absolute;
+    opacity:0;
+    top:-100%;
+    transform:translateY(-10px);
+    transition:opacity 200ms ease-in-out,
+              transform 200ms ease-in-out;
+  }
+  .master-tabs .tabs .tab-body > div.active {
+    transform:translateY(0px);
+    top:30px;
+    opacity:1;
+  }
+  .master-tabs .tabs .tab-body h1 {
+    color:#222;
+    margin-bottom:10px;
+  }
+  .master-tabs .tabs .tab-body p {
+    color:#555;
+    font-size:15px;
+  }
+  
+.dd-padding-0
+{
+    padding: 0px 0px !important;
+}
+  
+
+.image-gallery .city_senior_team figure img{
+    position: relative;
+    z-index: 9;
+}
+
+.order-1
+    {
+        order: 1;
+    }
+    .order-2
+    {
+        order: 2;
+    }
+    .order-3
+    {
+        order: 3;
+    }
+
+    .pt-30
+    {
+      padding: 30px 0px 0px 0px;
+    }
+    .mb-20
+    {
+      margin-bottom: 20px;
+    }
+
+    .city_senior_team .box
+    {
+      margin-bottom: 0px;
+    }
+
+    .master-tabs .tabs .tab-header > div:first-child
+    {
+      right: 0px;
+    }
+
+
+    .master-video .city_project_fig .overlay:before
+    {
+      background-color: unset;
+      
+    }
+    .master-video .city_project_fig
+    {
+      margin-bottom: 20px; 
+    }
+
+    .master-layout.event_sidebar {
+      margin-top: 1px !important;
+  }
+  .master-layout .city_about_wrap ul {
+      padding-left: 0px !important;
+  }
+  .master-layout .sidebar_heading
+  {
+      padding-left: 0px !important;
+      border-left: 0px !important;
+  }
+
+  .master-layout .section_heading
+  {
+    border-left: 0px !important;
+    padding-left: 0px;
+  }
+  .dropdown-menu
+  {
+    padding: 0px;
+  }
+
+  .master-layout .blog-section .overlay
+  {
+    border-radius: 10px 10px 0px 0px;
+  }
+  .master-layout .blog-section ul li
+  {
+    list-style-type: none;
+  }
+  .video-gall figure video
+  {
+    width: 100%;
+    height: 240px;
+  }
+   .master-video .city_project_fig
+   {
+    position: relative;
+   }
+
+   .master-video figure
+   {
+    display: flex;
+    flex-wrap:wrap;
+    gap: 15px;
+    justify-content: center;
+    padding: 10px;
+   }
+   .master-video .video
+   {
+    border: 5px solid #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    overflow: hidden;
+   }
+   .master-video .video video
+   {
+    height: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+   }
+   .master-video .video video
+   {
+    height: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .2s linear;
+   }
+   .master-video .video:hover video
+   {
+    transform: scale(1.1);
+   }
+
+   .popup-video
+   {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    background:rgba(0,0,0,0.8) ;
+    height: 100%;
+    width: 100%;
+   }
+   .popup-video video
+   {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 750px;
+    border-radius: 5px;
+    border: 3px solid #fff;
+    object-fit: cover;
+   }
+
+  .popup-video span 
+  {
+    position:absolute;
+    top:5px;
+    right: 20px;
+    font-size: 50px;
+    color: #fff;
+    font-weight: bolder;
+    z-index: 9999;
+    cursor: pointer;
+  }
+
+  .popup-video  
+  {
+   display: none;
+  }
+
+
+
+
+
+
+  
