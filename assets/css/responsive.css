@@ -134,8 +134,10 @@
     }
 
     ul.nav-menu > li {
-        height: 50px;
+        height: 42px;
     }
+
+    .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.sub-menu li a{font: 12px/12px Poppins !important;}
 
     /* .full-width-header .rs-header .logo-part img {
         height: 100px !important;
@@ -278,7 +280,7 @@
     }
 
     .full-width-header .rs-header .logo-part img {
-        height: 134px !important;
+        height: 60px !important;
     }
     .full-width-header .rs-header .logo-part a
     {
@@ -308,8 +310,8 @@
     }
 
     .full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li {
-        margin-right: 12px !important;
-        margin-left: 18px;
+        margin-right: 10px !important;
+        margin-left: 10px;
     }
 }
 
