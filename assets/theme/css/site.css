@@ -4353,21 +4353,21 @@ iframe#twitter-widget-0 {
     left: 0;
     right: 0px;
     width: 100%;
-    background-color: #e5e5e5;
+	background-color: #277ed5;
     border-radius: 5px 5px 0 0;
-    border-bottom: 1px solid #dddddd;
+    /* border-bottom: 1px solid #dddddd; */
     margin: 0 auto;
-    color: #000000;
+    color: #fff;
 }
 
 .twitter-c {
 	/* background: #212121 !important; */
-	background: #e5e5e5 !important;
+	background: #212121 !important;
 }
 
 .linkedin-c {
-	/* background: #0077b5 !important; */
-	background: #e5e5e5 !important;
+	background: #0077b5 !important;
+	/* background: #e5e5e5 !important; */
 }
 
 
@@ -5779,8 +5779,8 @@ input:focus {
 }
 
 h2.instagram-c {
-	/* background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) !important; */
-	background-color: #e5e5e5;
+	background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) !important;
+	/* background-color: #e5e5e5; */
 }
 
 .banner-content-wrapper.services-heading {
