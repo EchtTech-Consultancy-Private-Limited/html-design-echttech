@@ -647,6 +647,7 @@ ul.font-controll li:first-child {
 .body-container ul.list li:hover i::before, .body-container ul.list li:hover a, .body-container ul.list li:hover a .list-content{
 	color: red;
 	cursor: pointer;
+	font-size: 15px;
 }
 
 h2.title {

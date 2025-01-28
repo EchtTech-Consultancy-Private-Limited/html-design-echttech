@@ -2136,7 +2136,7 @@ em {
 
 .common-right ul li.ico-site-search input[type="text"],
 .main-goi-form input[type="text"] {
-	border: 2px solid var(--orange-color);
+	border: 2px solid var(--primary-color);
 	height: 36px;
 	line-height: 34px;
 	padding: 0 40px 0 8px;
@@ -2164,7 +2164,7 @@ em {
 	overflow: hidden;
 	text-indent: -200px;
 	font-size: 1px;
-	background: url(../images/ico-goi-search.png) no-repeat center center var(--orange-color);
+	background: url(../images/ico-goi-search.png) no-repeat center center var(--primary-color);
 	position: absolute;
 	top: 0px;
 	left: 229px;
@@ -4337,33 +4337,37 @@ iframe#twitter-widget-0 {
 }
 
 .social-box:hover {
-	box-shadow: none;
+    transform: scale(1.05);
+    box-shadow: rgb(0 0 0 / 48%) 0px 3px 8px;
 }
 
 .social-box h2 {
 	font-size: 94% !important;
-	line-height: 48px;
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	padding: 40px 15px;
-	position: relative;
-	top: 0;
-	left: 0;
-	right: 0px;
-	width: 100%;
-	background-color: #277ed5;
-	border-radius: 5px 5px 0 0;
-	margin: 0 auto;
-	color: #fff;
+    line-height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 15px;
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0px;
+    width: 100%;
+    background-color: #e5e5e5;
+    border-radius: 5px 5px 0 0;
+    border-bottom: 1px solid #dddddd;
+    margin: 0 auto;
+    color: #000000;
 }
 
 .twitter-c {
-	background: #212121 !important;
+	/* background: #212121 !important; */
+	background: #e5e5e5 !important;
 }
 
 .linkedin-c {
-	background: #0077b5 !important;
+	/* background: #0077b5 !important; */
+	background: #e5e5e5 !important;
 }
 
 
@@ -5687,15 +5691,17 @@ input:focus {
 
 .sub-sec h2 .img-b {
 	position: absolute;
-	left: 0;
-	width: 38px;
-	height: 38px;
-	display: flex;
-	justify-content: center;
-	margin-right: 10px;
-	padding: 10px;
-	background-color: #ffffff;
-	border-radius: 0 25px 25px 0;
+    left: 0;
+    top: 0;
+    width: 42px;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    margin-right: 0;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 0 0px 30px 30px;
+    box-shadow: rgb(0 0 0 / 48%) 0px 3px 8px;
 }
 
 .clientail ul.flex-direction-nav {
@@ -5773,7 +5779,8 @@ input:focus {
 }
 
 h2.instagram-c {
-	background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) !important;
+	/* background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%) !important; */
+	background-color: #e5e5e5;
 }
 
 .banner-content-wrapper.services-heading {
@@ -5991,8 +5998,8 @@ table.dataTable tbody td {
 	-webkit-transition: all ease-in-out 0.3s;
 }
 
-.deprt-icon-box:hover {
-	padding: 20px 15px;
+.deprt-icon-box:hover a {
+    font-size: 18px;
 }
 
 .depart-info .deprt-icon-box:hover img {
@@ -6433,9 +6440,15 @@ blockquote {
 /* marqueee    */
 
 .latest_news_marquee a {
-	color: #333;
+	color: #6b6b6b;
 	line-height: 37px;
+	transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for both transform and color */
 }
+  
+  .latest_news_marquee a:hover {
+	color: #000;
+	transform: scale(1.1); /* Adds a scaling effect on hover */
+  }
 
 .latest_news_marquee a::before {
 	content: '\f101 ';
@@ -7021,6 +7034,9 @@ li.nav-item.activemenu {
 .card-div:hover{
 	transform: translateY(-10px);
 }
+.card-div:hover .card-icon{
+	transform: rotate(180deg);
+}
 .card-image {
 	height: 177px;
 	position: relative;
@@ -7060,6 +7076,7 @@ li.nav-item.activemenu {
 	align-items: center;
 	justify-content: center;
 	margin-right: 15px;
+	transition: transform 0.5s ease;
 }
 .card-title {
 	font-size: 1.5rem;
@@ -7106,7 +7123,7 @@ li.nav-item.activemenu {
 
 /* banner slider */
 
-.slider-container {
+/* .slider-container {
 	position: relative;
 	width: 100%;
 	height: 550px;
@@ -7206,8 +7223,99 @@ li.nav-item.activemenu {
 
 section.latest-news {
     border-bottom: 1px solid #efefef;
+} */
+
+.slider-container {
+	position: relative;
+	width: 100%;
+	height: 550px;
+	overflow: hidden;
+	display: flex;
+	align-items: center;
 }
 
+.slider {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	transition: transform 0.5s ease-in-out;
+}
+
+.slider .slide {
+	min-height: 100%;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	background: #ddd;
+}
+.slider img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    max-width: 100%;
+}
+
+.slider .slide:nth-child(odd) {
+	background: #bbb;
+}
+
+.navigation {
+	position: absolute;
+	right: 20px;
+	top: 50%;
+	transform: translateY(-50%);
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+}
+
+.navigation .dot {
+	width: 12px;
+	height: 12px;
+	background: #333;
+	border-radius: 50%;
+	cursor: pointer;
+	transition: background 0.3s;
+}
+
+.navigation .dot.active {
+	background: #fff;
+}
+
+.controls {
+	position: absolute;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+	display: flex;
+	gap: 15px;
+}
+
+.controls button {
+	padding: 10px;
+	font-size: 16px;
+	border: none;
+	background: #ababab94;
+	cursor: pointer;
+	border-radius: 50%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	transition: background 0.3s;
+}
+
+.controls button:hover {
+	background: #eee;
+}
+
+.controls button svg {
+	width: 24px;
+	height: 24px;
+	stroke: #333;
+	stroke-width: 2;
+}
 
 /* gallary section======================================================================================================= */
 
@@ -7242,6 +7350,25 @@ h1 {
 }
 .tab-button.first{
 	border-radius: 20px 0 0 20px;
+}
+.tab-button.first.view-all-btn {
+    border-radius: 10px;
+    padding: 6px 12px;
+    font-size: 14px;
+    background-color: #d13000;
+    border: none;
+    color: #fff;
+	display: flex;
+		align-self: center;
+		align-items: center;
+		justify-self: center;
+		margin-top: 14px;
+}
+.tab-button.first.view-all-btn:hover {
+    background-color: #b92c01;
+    
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+   
 }
 .tab-button.second{
 	border-radius: 0 20px 20px 0;
