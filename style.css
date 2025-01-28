@@ -7137,7 +7137,7 @@ body {
 	background-color: #fff;
 }
 .what-news .city_department_fig:hover a{
-	color: #fff;
+	color: #000000;
 }
 .city_news_wrap .city_request_text {
     overflow: hidden;
@@ -7269,19 +7269,20 @@ footer .widget_title{
 
 .date-style {
 	display: inline-block;
-    background: #14284b;
+    background: #ffffff;
     padding: 6px 7px;
-    border-radius: 5px;
+    border-radius: 0;
     width: 108px;
     text-align: center;
     margin-right: 10px;
     height: 55px;
+    border-right: 2px solid #dadada;
 }
 .what-news .date-style p{
-    display: block;
+	display: block;
     font-size: 13px;
     margin: 0;
-    color: #fff;
+    color: #000080;
 }
 .what-news .date-style p span{
     display: block
@@ -7725,7 +7726,7 @@ footer .widget_title{
 
 .vacancy-container{
 	display: flex;
-    /* padding: 10px; */
+    padding: 5px 0 5px 0;
     align-items: center;
 	margin-left: 0px;
 }
@@ -7885,7 +7886,7 @@ footer .widget_title{
 	background: #27ae60;
 }
 
-.city_department_fig:hover{background: #14284b !important;}
+.city_department_fig:hover{background: #fff !important;}
 
 .widget_wrap.overlay:before {
     background: #01011f !important;
