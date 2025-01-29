@@ -1,0 +1,129 @@
+/* Variables */
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* -------------------------- Utilities -------------------------*/
+.b1 {
+  border: 2px solid red;
+}
+
+/* -------------------------- Top Header -------------------------*/
+.top-header {
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(241, 241, 241);
+  padding: 5px 50px;
+}
+.top-header .left-top-header {
+  display: flex;
+  gap: 20px;
+}
+.top-header .left-top-header .date-time {
+  color: #fe5000;
+  background-color: white;
+  padding: 1px 20px;
+  border-radius: 20px;
+}
+.top-header .right-top-header {
+  display: flex;
+}
+
+/* -------------------------- Top Header end -------------------------*/
+/* -------------------------- main header start -----------------------*/
+.main-header {
+  padding: 5px 50px;
+}
+.main-header .search-bar {
+  width: 400px;
+  border-bottom: 2px solid #fe5000;
+  border-radius: 10px;
+}
+.main-header .search-bar input {
+  border: none;
+}
+
+/* -------------------------- main header end   -------------------------*/
+/* -------------------------- Navbar start -------------------------*/
+.navbar {
+  padding: 0px 50px;
+  background-color: #008eaa;
+}
+.navbar a {
+  color: white;
+}
+.navbar a:hover {
+  color: white;
+  background-color: #fe5000;
+  border-bottom: 1px solid white;
+}
+
+/* -------------------------- Navbar end  -------------------------*/
+/* -------------------------- About us  -------------------------*/
+.aboutus-section {
+  padding: 60px;
+  height: 500px;
+}
+.aboutus-section .aboutus-section-container {
+  background-color: #008eaa;
+  padding: 0px 20px;
+  color: white;
+  border-radius: 30px;
+  display: flex;
+}
+.aboutus-section .aboutus-section-container .aboutus-section-container-img {
+  padding: 0px 60px;
+  text-align: center;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.aboutus-section .aboutus-section-container .aboutus-section-container-img img {
+  width: 200px;
+  margin: 10px;
+}
+.aboutus-section .aboutus-section-container .aboutus-section-container-info {
+  width: 70%;
+  padding: 30px;
+}
+.aboutus-section .aboutus-section-container .aboutus-section-container-info .aboutus-heading {
+  color: black;
+  font-size: 24px;
+  border-bottom: 3px solid #fe5000;
+  padding: 0px 5px;
+}
+.aboutus-section .aboutus-section-container .aboutus-section-container-info div {
+  padding: 10px;
+  font-size: 18px;
+}
+.aboutus-section .aboutus-section-container .aboutus-section-container-info ul {
+  line-height: 2rem;
+}
+
+/* -------------------------- about us end  -------------------------*/
+.service-section h2 {
+  font-weight: bold;
+}
+.service-section h2 span {
+  color: #d17a22;
+}
+
+.impact-section {
+  text-align: center;
+  margin: 50px 0;
+}
+.impact-section .card-custom {
+  border-radius: 10px;
+  padding: 20px;
+  color: #000;
+}
+.impact-section .card-custom img {
+  width: 50px;
+}/*# sourceMappingURL=styles.css.map */
