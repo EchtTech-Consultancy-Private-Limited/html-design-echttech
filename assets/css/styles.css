@@ -1,9 +1,12 @@
 /* Variables */
 /* General Styles */
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
 body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 /* -------------------------- Utilities -------------------------*/
@@ -66,11 +69,11 @@ body {
 /* -------------------------- Navbar end  -------------------------*/
 /* -------------------------- About us  -------------------------*/
 .aboutus-section {
-  padding: 60px;
+  padding: 50px;
   height: 500px;
 }
 .aboutus-section .aboutus-section-container {
-  background-color: #008eaa;
+  background: linear-gradient(90deg, rgb(0, 142, 170) 0%, rgb(167, 240, 255) 100%);
   padding: 0px 20px;
   color: white;
   border-radius: 30px;
@@ -108,22 +111,151 @@ body {
 }
 
 /* -------------------------- about us end  -------------------------*/
+.service-section {
+  padding: 0px 50px;
+  padding-bottom: 40px;
+}
 .service-section h2 {
   font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
 }
 .service-section h2 span {
-  color: #d17a22;
+  color: #fe5000;
+}
+.service-section .service-card {
+  background: #eef4ff;
+  padding: 20px;
+  border-radius: 12px;
+  text-align: left;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  align-items: center;
+}
+.service-section .service-card:hover {
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: -5px;
+}
+.service-section .service-card .icon {
+  font-size: 40px;
+  color: #4a90e2;
+  margin: 10px;
+}
+.service-section .service-card .info {
+  padding: 5px;
+}
+.service-section .service-card .info h5 {
+  font-weight: 700;
+  color: #333;
+  margin-bottom: 10px;
+}
+.service-section .service-card .info p {
+  color: #555;
+  font-size: 14px;
 }
 
-.impact-section {
+.social-media-section {
+  padding: 50px 0;
   text-align: center;
-  margin: 50px 0;
+  background: url(/assets/images/press-release.png);
 }
-.impact-section .card-custom {
+.social-media-section .card {
+  padding: 10px 8px;
   border-radius: 10px;
-  padding: 20px;
-  color: #000;
+  color: white;
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
 }
-.impact-section .card-custom img {
-  width: 50px;
+.social-media-section .card .card-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+}
+.social-media-section .card .card-logo i {
+  font-size: 25px;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.social-media-section .card .card-logo h4 {
+  font-size: 18px;
+  font-weight: bold;
+}
+.social-media-section .card .card-content {
+  border: 2px solid rgb(175, 175, 175);
+  height: 300px;
+  background-color: white;
+  color: #000000;
+  border-radius: 10px;
+}
+.social-media-section .card:hover {
+  transform: scale(1.05);
+}
+.social-media-section .facebook {
+  background: linear-gradient(135deg, #1877f2, #4c8bf5);
+}
+.social-media-section .instagram {
+  background: linear-gradient(135deg, #e1306c, #f77737);
+}
+.social-media-section .twitter {
+  background: linear-gradient(135deg, #03121b, #000000);
+}
+.social-media-section .linkedin {
+  background: linear-gradient(135deg, #0077b5, #0e6ba8);
+}
+
+.media-tabs {
+  padding: 30px 0;
+  text-align: center;
+}
+.media-tabs h2 {
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.media-tabs h2 span {
+  color: #fe5000;
+}
+.media-tabs .nav-tabs {
+  justify-content: center;
+  border-bottom: 2px solid #ddd;
+}
+.media-tabs .nav-tabs .nav-item .nav-link {
+  color: #333;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-bottom: 3px solid transparent;
+  transition: all 0.3s ease-in-out;
+}
+.media-tabs .nav-tabs .nav-item .nav-link:hover, .media-tabs .nav-tabs .nav-item .nav-link.active {
+  color: #007bff;
+  border-bottom: 3px solid #007bff;
+}
+.media-tabs .tab-content {
+  margin-top: 30px;
+}
+.media-tabs .gallery-item {
+  display: block;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: transform 0.3s ease-in-out;
+}
+.media-tabs .gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+.media-tabs .gallery-item:hover {
+  transform: scale(1.05);
+}
+.media-tabs .video-item {
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }/*# sourceMappingURL=styles.css.map */

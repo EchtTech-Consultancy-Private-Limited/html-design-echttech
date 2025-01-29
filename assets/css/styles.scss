@@ -9,6 +9,7 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
+  font-family: Arial, sans-serif;
 }
 
 /* -------------------------- Utilities -------------------------*/
@@ -76,11 +77,16 @@ body {
 /* -------------------------- Navbar end  -------------------------*/
 /* -------------------------- About us  -------------------------*/
 .aboutus-section {
-  padding: 60px;
+  padding: 50px;
   height: 500px;
   .aboutus-section-container {
     // border: 2px solid rgb(124, 0, 128);
-    background-color: $primary-color;
+    // background-color: $primary-color;
+    background: linear-gradient(
+      90deg,
+      rgba(0, 142, 170, 1) 0%,
+      rgb(167, 240, 255) 100%
+    );
     padding: 0px 20px;
     color: white;
     border-radius: 30px;
@@ -94,7 +100,7 @@ body {
       align-items: center;
       flex-direction: column;
 
-      img{
+      img {
         width: 200px;
         margin: 10px;
       }
@@ -112,7 +118,7 @@ body {
         padding: 10px;
         font-size: 18px;
       }
-      ul{
+      ul {
         line-height: 2rem;
       }
     }
@@ -121,26 +127,224 @@ body {
 
 /* -------------------------- about us end  -------------------------*/
 // --------------------------------- serivce card  -----------------------------
-.service-section{
+.service-section {
+  padding: 0px 50px;
+  padding-bottom: 40px;
   h2 {
     font-weight: bold;
+    text-align: center;
+    margin-bottom: 15px;
     span {
-      color: #d17a22;
+      color: $secondary-color;
     }
   }
-}
 
-.impact-section {
-  text-align: center;
-  margin: 50px 0;
-
-  .card-custom {
-    border-radius: 10px;
+  .service-card {
+    background: #eef4ff;
+    // background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    // background: linear-gradient(90deg, rgba(0,142,170,1) 0%, rgba(255,255,255,1) 100%);
+    // background-image: linear-gradient(to top, #a99aea 0%, #ebeaee 100%);
+    // background-image: linear-gradient(to top, #fc0b0b 0%, #0026ff 100%);
+    // background: linear-gradient(rgb(227, 221, 255) 36.69%, rgb(169, 154, 234) 89.14%);
     padding: 20px;
-    color: #000;
-    img {
-      width: 50px;
+    border-radius: 12px;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+    display: flex;
+    align-items: center;
+
+    &:hover {
+      box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+      position: relative;
+      top: -5px;
     }
+
+    .icon {
+      font-size: 40px;
+      color: #4a90e2;
+      margin: 10px;
+    }
+
+    .info {
+      // border: 2px solid gray;
+      padding: 5px;
+      h5 {
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 10px;
+      }
+      p {
+        color: #555;
+        font-size: 14px;
+      }
+    }
+  }
+
+  // #box1 {
+  //   background: linear-gradient(
+  //     rgb(241, 238, 255) 36.69%,
+  //     rgb(169, 154, 234) 89.14%
+  //   );
+  // }
+  // #box2 {
+  //   background: linear-gradient(rgb(255, 230, 242) 0%, rgb(255, 173, 214) 100%);
+  // }
+  // #box3 {
+  //   background: linear-gradient(
+  //     94.66deg,
+  //     rgb(253, 234, 227) -2.76%,
+  //     rgb(255, 172, 142) 98.43%
+  //   );
+  // }
+  // #box4 {
+  //   background: linear-gradient(rgb(255, 247, 209) 0%, rgb(255, 229, 98) 100%);
+  // }
+  // #box5 {
+  //   background: linear-gradient(
+  //     rgb(237, 255, 228) 7.31%,
+  //     rgb(177, 218, 157) 94.92%
+  //   );
+  // }
+  // #box6 {
+  //   background: linear-gradient(
+  //     rgb(248, 250, 255) 9.11%,
+  //     rgb(137, 174, 255) 100%
+  //   );
+  // }
+}
+
+// ----------------------------- service card end ----------------------------------
+// ----------------------------- social meida start ----------------------------------
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+.social-media-section {
+  padding: 50px 0;
+  text-align: center;
+  background: url(/assets/images/press-release.png);
+
+  .card {
+    padding: 10px 8px;
+    border-radius: 10px;
+    color: white;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+
+    .card-logo {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+
+      i {
+        font-size: 25px;
+        margin-bottom: 10px;
+        margin-right: 10px;
+      }
+
+      h4 {
+        font-size: 18px;
+        font-weight: bold;
+      }
+    }
+
+    .card-content{
+      border: 2px solid rgb(175, 175, 175);
+      height: 300px;
+      background-color: white; 
+      color: #000000;
+      border-radius: 10px;
+    }
+
+    &:hover {
+      transform: scale(1.05);
+    }
+  }
+
+  .facebook {
+    background: linear-gradient(135deg, #1877f2, #4c8bf5);
+  }
+
+  .instagram {
+    background: linear-gradient(135deg, #e1306c, #f77737);
+  }
+
+  .twitter {
+    // background: linear-gradient(135deg, #1da1f2, #0e71c8);
+    background: linear-gradient(135deg, #03121b, #000000);
+  }
+
+  .linkedin {
+    background: linear-gradient(135deg, #0077b5, #0e6ba8);
   }
 }
 
+// ----------------------------- social media end ----------------------------------
+// ----------------------------- media gallery start ----------------------------------
+
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
+
+.media-tabs {
+    padding: 30px 0;
+    text-align: center;
+
+    h2 {
+      font-weight: bold;
+      text-align: center;
+      margin-bottom: 15px;
+      span {
+        color: $secondary-color;
+      }
+    }
+
+    .nav-tabs {
+        justify-content: center;
+        border-bottom: 2px solid #ddd;
+
+        .nav-item {
+            .nav-link {
+                color: #333;
+                font-weight: bold;
+                padding: 10px 20px;
+                border: none;
+                border-bottom: 3px solid transparent;
+                transition: all 0.3s ease-in-out;
+
+                &:hover, &.active {
+                    color: #007bff;
+                    border-bottom: 3px solid #007bff;
+                }
+            }
+        }
+    }
+
+    .tab-content {
+        margin-top: 30px;
+    }
+
+    .gallery-item {
+        display: block;
+        overflow: hidden;
+        border-radius: 10px;
+        margin-bottom: 20px;
+        transition: transform 0.3s ease-in-out;
+
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        &:hover {
+            transform: scale(1.05);
+        }
+    }
+
+    .video-item {
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+}
