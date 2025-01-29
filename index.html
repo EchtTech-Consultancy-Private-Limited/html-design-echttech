@@ -78,6 +78,10 @@
                         <div  class="c-box purple " id="purple" data-id="#2a2f67" title="Purple"></div>
                     </div>
                 </li> -->
+                <li class="screen-reader">
+                    <a href="javascript:void()" class="d-inline-block" onclick="slipttobottom()" rel="noopener noreferrer" tabindex="0"><span class="mob-th">Skip to Main Content</span> </a> |
+                    <a href="javascript:void()" class="d-inline-block reader" rel="noopener noreferrer" tabindex="0"><span class="mob-th-acces"> Screen Reader Access</span></a>
+                 </li>
                                 <li class="gov-india timer-date-c">
                                     <span class="li_eng responsive_go_eng">
                                         09 January 2025
@@ -101,10 +105,49 @@
                         </div>
                         <div class="common-right clearfix">
                             <ul id="header-nav">
+                               <li class="d-flex align-items-center" title="Dark Mode">
+                                <svg display="none">
+                                    <symbol id="light" viewBox="0 0 24 24">
+                                        <g stroke="currentColor" stroke-width="2" stroke-linecap="round">
+                                            <line x1="12" y1="17" x2="12" y2="20" transform="rotate(0,12,12)" />
+                                            <line x1="12" y1="17" x2="12" y2="20" transform="rotate(45,12,12)" />
+                                            <line x1="12" y1="17" x2="12" y2="20" transform="rotate(90,12,12)" />
+                                            <line x1="12" y1="17" x2="12" y2="20" transform="rotate(135,12,12)" />
+                                            <line x1="12" y1="17" x2="12" y2="20" transform="rotate(180,12,12)" />
+                                            <line x1="12" y1="17" x2="12" y2="20" transform="rotate(225,12,12)" />
+                                            <line x1="12" y1="17" x2="12" y2="20" transform="rotate(270,12,12)" />
+                                            <line x1="12" y1="17" x2="12" y2="20" transform="rotate(315,12,12)" />
+                                        </g>
+                                        <circle fill="currentColor" cx="12" cy="12" r="5" />
+                                    </symbol>
+                                    <symbol id="dark" viewBox="0 0 24 24">
+                                        <path fill="currentColor" d="M15.1,14.9c-3-0.5-5.5-3-6-6C8.8,7.1,9.1,5.4,9.9,4c0.4-0.8-0.4-1.7-1.2-1.4C4.6,4,1.8,7.9,2,12.5c0.2,5.1,4.4,9.3,9.5,9.5c4.5,0.2,8.5-2.6,9.9-6.6c0.3-0.8-0.6-1.7-1.4-1.2C18.6,14.9,16.9,15.2,15.1,14.9z" />
+                                    </symbol>
+                                </svg>
+                                <label class="switch">
+                                    <input class="switch__input" type="checkbox" role="switch" name="dark" />
+                                    <svg class="switch__icon" width="24px" height="24px" aria-hidden="true">
+                                        <use href="#light" />
+                                    </svg>
+                                    <svg class="switch__icon" width="24px" height="24px" aria-hidden="true">
+                                        <use href="#dark" />
+                                    </svg>
+                                    <span class="switch__inner"></span>
+                                    <span class="switch__inner-icons">
+                                        <svg class="switch__icon" width="24px" height="24px" aria-hidden="true">
+                                            <use href="#light" />
+                                        </svg>
+                                        <svg class="switch__icon" width="24px" height="24px" aria-hidden="true">
+                                            <use href="#dark" />
+                                        </svg>
+                                    </span>
+                                    <span class="switch__sr">Dark Mode</span>
+                                </label>
+                               </li>
                                 <li class="ico-skip cf"><a href="#skipCont" title="Skip to main content"> <img
                                             class="top" src="assets/images/ico-skip.png" alt="Site Search"></a></a>
                                 </li>
-                                <li class="ico-site-search cf">
+                                <!-- <li class="ico-site-search cf">
                                     <a href="" id="toggleSearch" title="Site Search">
                                         <img class="top" src="assets/images/ico-site-search.png"
                                             alt="Site Search"></a>
@@ -130,7 +173,7 @@
                                             <div id="auto_suggesion"></div>
                                         </div>
                                     </div>
-                                </li>
+                                </li> -->
 
                                 <li class="ico-sitemap screen-reader cf"><a href="" title="Screen Reader Access"><i
                                             class="fa fa-volume-up"></i></a> </li>
@@ -152,11 +195,11 @@
                                                 href="javascript:void(0);">A<sup>&nbsp;</sup></a> </li>
                                         <li> <a onClick="set_font_size(&#39;decrease&#39;)" title="Decrease font size"
                                                 href="javascript:void(0);">A<sup>-</sup></a> </li>
-                                        <li> <a href="javascript:void(0);" class="high-contrast dark"
+                                        <!-- <li> <a href="javascript:void(0);" class="high-contrast dark"
                                                 title="High Contrast">A</a>
                                         </li>
                                         <li> <a href="javascript:void(0);" class="high-contrast light"
-                                                title="Normal Contrast">A</a> </li>
+                                                title="Normal Contrast">A</a> </li> -->
                                     </ul>
                                 </li>
                                 <li class="ico-social cf">
@@ -191,7 +234,7 @@
                                 </li>
 
                                 <li class="ico-sitemap cf"><a href="" title="Sitemap">
-                                        <img class="top" src="assets/images/ico-sitemap.png" alt="Sitemap"></a>
+                                        <img class="top" src="assets/images/sitemap10.png" alt="Sitemap"></a>
                                 </li>
 
                                 <li class="hindi cmf_lan d-hide">
@@ -199,11 +242,30 @@
                                         <span class="d-none">Language</span>
                                         <select class="Select Language" onchange="setlang(value);" tabindex="0">
                                             <option value="en">
-                                                English</option>
+                                                 English</option>
                                             <option value="hi">
                                                 हिन्दी</option>
                                         </select>
                                     </label>
+                                    <!-- <div class="language-selector">
+                                        <button id="languageButton" class="language-button">
+                                            <span></span>
+                                            <span id="currentLanguage">English</span>
+                                            <svg class="chevron" viewBox="0 0 24 24">
+                                                <path d="M7 10l5 5 5-5z"/>
+                                            </svg>
+                                        </button>
+                                        <div id="dropdown" class="dropdown">
+                                            <div class="dropdown-item" data-lang="en">
+                                               <span>A</span>
+                                                English
+                                            </div>
+                                            <div class="dropdown-item" data-lang="hi">
+                                               <span>अ</span>
+                                                हिन्दी
+                                            </div>
+                                        </div>
+                                    </div> -->
                                 </li>
                             </ul>
                         </div>
@@ -227,6 +289,35 @@
                             </div>
                         </div>
                     </a>
+                </div>
+                <div class="search-bar-div">
+                    <ul>
+                        <li class="ico-site-search cf">
+                            
+                            <div class="search-drop both-search">
+                                <div class="google-find">
+
+
+                                    <label for="search_key_g" class="notdisplay">Search</label>
+                                    <input type="text" name="query" id="search_key_g">
+                                    <input type="submit" value="Search" class="submit">
+
+
+                                </div>
+                                <div class="find">
+                                    <form name="searchForm" action="https://dev.NGT.staggings.in/search"
+                                        method="get">
+                                        <label for="search_key" class="notdisplay">Search</label>
+                                        <input type="text" name="search_key" id="search_key"
+                                            onKeyUp="autoComplete()" autocomplete="off" required value=""
+                                            placeholder="Search here...">
+                                        <input type="submit" value="Search" class="bttn-search">
+                                    </form>
+                                    <div id="auto_suggesion"></div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
                 <div class="header-right clearfix">
                     <div class="right-content clearfix">
@@ -2014,7 +2105,7 @@
                 <div class="footer-content align-items-center">
                     <div class="copyright-content">
                         <p class='m-0 text-left text-white'>
-                            © Copyright 2025 <strong>NGT.</strong><span> All Rights
+                            © Copyright 2025 <strong>COAL.</strong><span> All Rights
                                 Reserved. </span> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
                     </div>
@@ -2329,6 +2420,35 @@
         nonce="abqP2Btw"></script>
     <script>
         AOS.init();
+    </script>
+    <!-- language-select -->
+    <script>
+        const languageButton = document.getElementById('languageButton');
+        const dropdown = document.getElementById('dropdown');
+        const currentLanguage = document.getElementById('currentLanguage');
+        const currentFlag = document.getElementById('currentFlag');
+        const dropdownItems = document.querySelectorAll('.dropdown-item');
+
+        languageButton.addEventListener('click', () => {
+            dropdown.classList.toggle('show');
+        });
+
+        dropdownItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const lang = item.getAttribute('data-lang');
+                const flagSvg = item.querySelector('svg').outerHTML;
+                currentLanguage.textContent = item.textContent.trim();
+                currentFlag.outerHTML = flagSvg;
+                dropdown.classList.remove('show');
+            });
+        });
+
+        // Close the dropdown when clicking outside
+        window.addEventListener('click', (e) => {
+            if (!languageButton.contains(e.target) && !dropdown.contains(e.target)) {
+                dropdown.classList.remove('show');
+            }
+        });
     </script>
 </body>
 
