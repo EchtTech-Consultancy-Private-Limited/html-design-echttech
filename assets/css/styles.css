@@ -14,6 +14,14 @@ body {
   border: 2px solid red;
 }
 
+.b2 {
+  border: 2px solid green;
+}
+
+.b3 {
+  border: 2px solid blue;
+}
+
 /* -------------------------- Top Header -------------------------*/
 .top-header {
   font-size: 0.9rem;
@@ -70,17 +78,19 @@ body {
 /* -------------------------- About us  -------------------------*/
 .aboutus-section {
   padding: 50px;
-  height: 500px;
+  display: flex;
+  justify-content: space-between;
 }
 .aboutus-section .aboutus-section-container {
-  background: linear-gradient(90deg, rgb(0, 142, 170) 0%, rgb(167, 240, 255) 100%);
+  width: 68%;
+  background-color: #ffefd5;
   padding: 0px 20px;
-  color: white;
+  color: black;
   border-radius: 30px;
   display: flex;
 }
 .aboutus-section .aboutus-section-container .aboutus-section-container-img {
-  padding: 0px 60px;
+  padding: 0px 20px;
   text-align: center;
   width: 30%;
   display: flex;
@@ -98,7 +108,6 @@ body {
 }
 .aboutus-section .aboutus-section-container .aboutus-section-container-info .aboutus-heading {
   color: black;
-  font-size: 24px;
   border-bottom: 3px solid #fe5000;
   padding: 0px 5px;
 }
@@ -108,6 +117,27 @@ body {
 }
 .aboutus-section .aboutus-section-container .aboutus-section-container-info ul {
   line-height: 2rem;
+}
+.aboutus-section .imp-links {
+  width: 30%;
+  padding: 0px 20px;
+  color: black;
+  border: 2px solid gray;
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.aboutus-section .imp-links .imp-link-heading span {
+  color: #fe5000;
+}
+.aboutus-section .imp-links .scrollable-section {
+  height: 350px; /* Adjust height as needed */
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  padding: 15px;
+  background-color: #f8f9fa;
 }
 
 /* -------------------------- about us end  -------------------------*/
@@ -258,4 +288,34 @@ body {
   border-radius: 10px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.client-carousel {
+  display: flex;
+  align-items: center;
+  height: 200px;
+  background-color: #eafcff;
+  padding: 0px 50px;
+}
+.client-carousel .client-btn {
+  width: 100px;
+}
+
+.footer {
+  background: #0b0c10;
+}
+.footer .upper-footer {
+  display: flex;
+  flex-direction: row;
+}
+.footer .upper-footer .f1 {
+  width: 22%;
+}
+
+.footer a {
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
 }/*# sourceMappingURL=styles.css.map */
