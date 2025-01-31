@@ -186,6 +186,46 @@ body {
   font-size: 14px;
 }
 
+.service-section2 {
+  position: relative;
+  background-color: #eeecf9;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.service-section2 .card-wrapper {
+  width: 1100px;
+}
+.service-section2 .card-wrapper .card {
+  height: 270px;
+  width: 240px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  transition: transform 0.4s;
+}
+.service-section2 .card-wrapper .card img:hover { /* IE 9 */ /* Safari 3-8 */
+  transform: scale(1.1);
+}
+.service-section2 .btn1 {
+  background-color: #fe5000;
+  border-radius: 30px;
+  border: none;
+}
+.service-section2 .overlay {
+  z-index: 1;
+  position: absolute;
+  bottom: 30px;
+  width: 90%;
+  height: 228px;
+  background: #008eaa;
+  border-radius: 20px;
+  opacity: 0.8;
+  /* Optional transparency */
+}
+
 .social-media-section {
   padding: 50px 0;
   text-align: center;
