@@ -22215,6 +22215,9 @@ i.fas.fa-building {
   background: rgba(255, 255, 255, 0.05);
   border-radius: 20px;
   backdrop-filter: blur(10px);
+  background-color: #f8f1f3a8;
+  margin: 30px 12px;
+
 }
 
 .section-header {
