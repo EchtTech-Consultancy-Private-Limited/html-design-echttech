@@ -37,6 +37,8 @@
    <link rel="stylesheet" type="text/css" href="assets/css/buttons.dataTables.min.css">
    <link rel="stylesheet" href="public/mapFiles/esri.css">
    <link rel="stylesheet" href=" " id="hindiStyle">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
 
 </head>
 
@@ -152,7 +154,7 @@
                            </button>
 
                            <ul class="language-text">
-                              <li class="lang-item hindi lang-item-773 lang-item-hi mFocus">
+                              <li class="lang-item hindi-lang lang-item-773 lang-item-hi mFocus">
                                  <a lang="hi" hreflang="hi-IN" href="#" aria-label="हिन्दी" title="हिन्दी">हिन्दी</a>
                               </li>
                               <li class="lang-item english lang-item-773 lang-item-hi mFocus">
@@ -341,9 +343,10 @@
                                     </button>
                                  </li>
                                  <li class="screen-reader mFocus">
-                                    <button id="screen_reader" tabindex="0" data-label="Screen Reader" title="Screen Reader">
+                                    <button id="screen_reader" tabindex="0" data-label="Screen Reader"
+                                       title="Screen Reader">
                                        <img src="assets/img/screen-reader.png" alt="">
-                                        
+
                                        <span>Screen Reader</span>
                                     </button>
                                  </li>
@@ -889,7 +892,8 @@
       <!-- Demo new banner design Ends-->
       <!-- Card Section End -->
       <!-- About Section Start -->
-      <div id="rs-about" class="rs-about style8">
+      <!-- <div id="rs-about" class="rs-about style8">
+
          <div class="container">
             <div class="row">
                <div class="col-lg-12 p-0">
@@ -937,142 +941,137 @@
                </div>
             </div>
          </div>
-      </div>
+      </div> -->
+      <section class="about-section">
+         <div class="container">
+            <div class="section-title">
+               <h2>About Our Company</h2>
+               <p>Driving innovation and creating value for our clients worldwide</p>
+            </div>
+
+            <div class="about-grid">
+               <!-- About Us Card -->
+               <div class="about-card wow fadeInLeft" data-wow-delay="300ms" data-wow-duration="2000ms">
+                  <i class="fas fa-building"></i>
+                  <h3>About Us</h3>
+                  <p>We are a global leader in digital transformation, committed to delivering cutting-edge solutions
+                     that empower businesses to thrive in the modern economy.</p>
+                  <a href="#" class="read-more">Read More</a>
+               </div>
+
+               <!-- Mission Card -->
+               <div class="about-card" data-aos="fade-down">
+                  <i class="fas fa-bullseye"></i>
+                  <h3>Our Mission</h3>
+                  <p>To empower organizations through innovative technology solutions, fostering sustainable growth and
+                     creating meaningful impact in the communities we serve.</p>
+                  <a href="#" class="read-more">Read More</a>
+               </div>
+
+               <!-- Vision Card -->
+               <div class="about-card wow fadeInRight" data-wow-delay="300ms" data-wow-duration="2000ms">
+                  <i class="fas fa-binoculars"></i>
+                  <h3>Our Vision</h3>
+                  <p>To be the most trusted partner for digital innovation globally, shaping a future where technology
+                     and human potential combine to create extraordinary value.</p>
+                  <a href="#" class="read-more">Read More</a>
+               </div>
+            </div>
+         </div>
+      </section>
       <!-- About Section End -->
 
 
-      <div class="rs-categories gray-bg style1 pt-40 pb-20">
-         <div class="container">
-            <!-- <div class="row y-middle mb-20">
-                 <div class="col-md-6 sm-mb-30">
-                  <h2 class="title h-t mb-0">About Us</h2>
-                 </div>
-                 <div class="col-md-6">
-                     <div class="btn-part text-right sm-text-left">
-                         <a href="#" class="readon2">View All Categories</a>
-                     </div>
-                 </div>
-             </div> -->
-            <div class="row justify-content-center">
-               <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms"
-                  style="visibility: visible; animation-duration: 2000ms; animation-delay: 300ms; animation-name: fadeInUp;">
-                  <a href="#" class="card">
-                     <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                           <path
-                              d="M20 6h-4V4c0-1.11-.89-2-2-2h-4c-1.11 0-2 .89-2 2v2H4c-1.11 0-1.99.89-1.99 2L2 19c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V8c0-1.11-.89-2-2-2zm-6 0h-4V4h4v2z" />
-                        </svg>
-                     </div>
-                     <h2 class="title">Career With CIL</h2>
-                  </a>
+      <div class="container ten-card-section">
+         <div class="cards-grid">
+            <!-- Card 1 -->
+            <div class="card" data-aos="fade-up" data-aos-delay="100">
+               <div class="card-icon">
+                  <i class="fas fa-atom"></i>
                </div>
-               <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="2000ms"
-                  style="visibility: visible; animation-duration: 2000ms; animation-delay: 400ms; animation-name: fadeInUp;">
-                  <a href="#" class="card">
-                     <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                           <path d="M3.5 18.49l6-6.01 4 4L22 6.92l-1.41-1.41-7.09 7.97-4-4L2 16.99z" />
-                        </svg>
-                     </div>
-                     <h2 class="title">Investor Center</h2>
-                  </a>
+               <h3>Quantum Computing</h3>
+               <p>Next-gen processing power with quantum algorithms</p>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="card" data-aos="fade-up" data-aos-delay="200">
+               <div class="card-icon">
+                  <i class="fas fa-brain"></i>
                </div>
-               <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="500ms" data-wow-duration="2000ms"
-                  style="visibility: visible; animation-duration: 2000ms; animation-delay: 500ms; animation-name: fadeInUp;">
-                  <a href="#" class="card">
-                     <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                           <path
-                              d="M14 2H6c-1.1 0-1.99.9-1.99 2L4 20c0 1.1.89 2 1.99 2H18c1.1 0 2-.9 2-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z" />
-                        </svg>
-                     </div>
-                     <h2 class="title">Tenders</h2>
-                  </a>
+               <h3>Neural Networks</h3>
+               <p>Deep learning models for intelligent solutions</p>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="card" data-aos="fade-up" data-aos-delay="300">
+               <div class="card-icon">
+                  <i class="fas fa-shield-virus"></i>
                </div>
-               <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="300ms" data-wow-duration="2000ms"
-                  style="visibility: visible; animation-duration: 2000ms; animation-delay: 300ms; animation-name: fadeInUp;">
-                  <a href="#" class="card">
-                     <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                           <path
-                              d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4zm0 10.99h7c-.53 4.12-3.28 7.79-7 8.94V12H5V6.3l7-3.11v8.8z" />
-                        </svg>
-                     </div>
-                     <h2 class="title">Vigilance</h2>
-                  </a>
+               <h3>Cyber Security</h3>
+               <p>Advanced threat detection and prevention</p>
+            </div>
+
+            <!-- Card 4 -->
+            <div class="card" data-aos="fade-up" data-aos-delay="400">
+               <div class="card-icon">
+                  <i class="fas fa-cloud-moon"></i>
                </div>
-               <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="400ms" data-wow-duration="2000ms"
-                  style="visibility: visible; animation-duration: 2000ms; animation-delay: 400ms; animation-name: fadeInUp;">
-                  <a href="#" class="card">
-                     <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                           <path
-                              d="M6.05 8.05a7.001 7.001 0 0 0-.02 9.88c1.47-3.4 4.09-6.24 7.36-7.93A15.952 15.952 0 0 0 8 19.32c2.6 1.23 5.8.78 7.95-1.37C19.43 14.47 20 4 20 4S9.53 4.57 6.05 8.05z" />
-                        </svg>
-                     </div>
-                     <h2 class="title">Environment & Sustainability</h2>
-                  </a>
+               <h3>Edge Computing</h3>
+               <p>Distributed cloud infrastructure network</p>
+            </div>
+
+            <!-- Card 5 -->
+            <div class="card" data-aos="fade-up" data-aos-delay="500">
+               <div class="card-icon">
+                  <i class="fas fa-robot"></i>
                </div>
-               <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="500ms" data-wow-duration="2000ms"
-                  style="visibility: visible; animation-duration: 2000ms; animation-delay: 500ms; animation-name: fadeInUp;">
-                  <a href="#" class="card">
-                     <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                           <path
-                              d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z" />
-                        </svg>
-                     </div>
-                     <h2 class="title">Corporate Social Responsibility</h2>
-                  </a>
+               <h3>AR Integration</h3>
+               <p>Mixed reality experiences</p>
+            </div>
+
+            <!-- Card 6 -->
+            <div class="card" data-aos="fade-up" data-aos-delay="600">
+               <div class="card-icon">
+                  <i class="fas fa-infinity"></i>
                </div>
-               <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="500ms" data-wow-duration="2000ms"
-                  style="visibility: visible; animation-duration: 2000ms; animation-delay: 500ms; animation-name: fadeInUp;">
-                  <a href="#" class="card">
-                     <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                           <path
-                              d="M18 17H6v-2h12v2zm0-4H6v-2h12v2zm0-4H6V7h12v2zM3 22l1.5-1.5L6 22l1.5-1.5L9 22l1.5-1.5L12 22l1.5-1.5L15 22l1.5-1.5L18 22l1.5-1.5L21 22V2l-1.5 1.5L18 2l-1.5 1.5L15 2l-1.5 1.5L12 2l-1.5 1.5L9 2 7.5 3.5 6 2 4.5 3.5 3 2v20z" />
-                        </svg>
-                     </div>
-                     <h2 class="title">Bill Tracking / Status</h2>
-                  </a>
+               <h3>Blockchain Tech</h3>
+               <p>Decentralized secure transactions</p>
+            </div>
+
+            <!-- Card 7 -->
+            <div class="card" data-aos="fade-up" data-aos-delay="700">
+               <div class="card-icon">
+                  <i class="fas fa-satellite"></i>
                </div>
-               <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="500ms" data-wow-duration="2000ms"
-                  style="visibility: visible; animation-duration: 2000ms; animation-delay: 500ms; animation-name: fadeInUp;">
-                  <a href="#" class="card">
-                     <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                           <path
-                              d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z" />
-                        </svg>
-                     </div>
-                     <h2 class="title">Samvaad</h2>
-                  </a>
+               <h3>Space Tech</h3>
+               <p>Orbital solutions & satellite networks</p>
+            </div>
+
+            <!-- Card 8 -->
+            <div class="card" data-aos="fade-up" data-aos-delay="800">
+               <div class="card-icon">
+                  <i class="fas fa-dna"></i>
                </div>
-               <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="500ms" data-wow-duration="2000ms"
-                  style="visibility: visible; animation-duration: 2000ms; animation-delay: 500ms; animation-name: fadeInUp;">
-                  <a href="#" class="card">
-                     <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                           <path
-                              d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z" />
-                        </svg>
-                     </div>
-                     <h2 class="title">CIL Departments</h2>
-                  </a>
+               <h3>Bio Engineering</h3>
+               <p>Synthetic biology advancements</p>
+            </div>
+
+            <!-- Card 9 -->
+            <div class="card" data-aos="fade-up" data-aos-delay="900">
+               <div class="card-icon">
+                  <i class="fas fa-wind"></i>
                </div>
-               <div class="col-lg-3 col-md-6 mb-30 wow fadeInUp" data-wow-delay="500ms" data-wow-duration="2000ms"
-                  style="visibility: visible; animation-duration: 2000ms; animation-delay: 500ms; animation-name: fadeInUp;">
-                  <a href="#" class="card">
-                     <div class="icon">
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-                           <path
-                              d="M12 2C10.34 2 9 3.34 9 5s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3zm0 2c.55 0 1 .45 1 1s-.45 1-1 1-1-.45-1-1 .45-1 1-1zm-4.7 4.7C5.7 9.3 4 11.53 4 14c0 3.31 2.69 6 6 6s6-2.69 6-6c0-2.47-1.7-4.7-3.3-5.3C14.52 6.67 16 5.21 16 3.5 16 2.12 14.88 1 13.5 1S11 2.12 11 3.5c0 1.71 1.48 3.17 3.3 3.2zM12 20c-2.21 0-4-1.79-4-4 0-1.46.79-2.72 1.94-3.42C10.74 11.66 11.34 11 12 11s1.26.66 1.06 1.58C15.21 13.28 16 14.54 16 16c0 2.21-1.79 4-4 4z" />
-                        </svg>
-                     </div>
-                     <h2 class="title">Retired Benefits</h2>
-                  </a>
+               <h3>Clean Energy</h3>
+               <p>Sustainable power solutions</p>
+            </div>
+
+            <!-- Card 10 -->
+            <div class="card" data-aos="fade-up" data-aos-delay="1000">
+               <div class="card-icon">
+                  <i class="fas fa-robot"></i>
                </div>
+               <h3>Autonomous Systems</h3>
+               <p>Self-learning robotic networks</p>
             </div>
          </div>
       </div>
@@ -1091,7 +1090,7 @@
                            Facebook
                         </h2>
                      </div>
-                     <div class="plug-box facebook-feed-content text-center mt-5 pt-4">
+                     <div class="plug-box facebook-feed-content text-center">
                         <h6 class="mt-5 pt-5">Facebook Feed</h6>
                      </div>
                   </div>
@@ -1105,7 +1104,7 @@
                            Twitter
                         </h2>
                      </div>
-                     <div class="plug-box twitter-feed-content p-2 mt-5 pt-4 text-center">
+                     <div class="plug-box twitter-feed-content p-2 text-center">
                         <h6 class="mt-5 pt-5">Twitter Feed</h6>
                      </div>
                   </div>
@@ -1120,7 +1119,7 @@
                            LinkedIn
                         </h2>
                      </div>
-                     <div class="plug-box linkedinfeed text-center mt-5 pt-4">
+                     <div class="plug-box linkedinfeed text-center">
                         <h6 class="mt-5 pt-5">LinkedIn Feed</h6>
                      </div>
                   </div>
@@ -1134,7 +1133,7 @@
                            Instagram
                         </h2>
                      </div>
-                     <div class="plug-box linkedinfeed text-center mt-5 pt-4">
+                     <div class="plug-box linkedinfeed text-center">
                         <h6 class="mt-5 pt-5">Instagram Feed</h6>
                      </div>
                   </div>
@@ -1144,7 +1143,7 @@
       </div>
 
    </div>
-   <div class="gallery-section p-32">
+   <!-- <div class="gallery-section p-32">
       <div class="container">
          <div class="row">
             <div class="col-md-6">
@@ -1271,17 +1270,7 @@
                               </div>
                            </div>
                         </div>
-                        <!-- <div class="team-item">
-                           <div class="gallery-box media-icon orange-color">
-                              <div class="youtube-player" data-video-id="7a5UWRE9nlU">
-                                 <iframe width="100%" height="315"
-                                    src="https://www.youtube.com/embed/vfCrQpfXEMY?si=uV354j7Fzh80QQ2D"
-                                    title="YouTube video player" frameborder="0"
-                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                              </div>
-                           </div>
-                        </div> -->
+                       
                      </div>
                   </div>
                   <div class="btn-view_play">
@@ -1302,7 +1291,67 @@
             </div>
          </div>
       </div>
-   </div>
+   </div> -->
+   <!-- Gallery-section -->
+
+   <div class="dual-gallery-container">
+      <!-- Image Gallery -->
+      <section class="gallery-section">
+          <div class="section-header">
+              <h2 class="section-title">Image Gallery</h2>
+              <button class="view-all-btn">View All</button>
+          </div>
+          <div class="gallery-grid">
+              <div class="gallery-item">
+                  <img src="assets/img/gallery-img-1.jpg" alt="Image 1">
+              </div>
+              <div class="gallery-item">
+                  <img src="assets/img/gallery-img-2.jpg" alt="Image 2">
+              </div>
+              <div class="gallery-item">
+                  <img src="assets/img/gallery-img-1.jpg" alt="Image 3">
+              </div>
+              <div class="gallery-item">
+                  <img src="assets/img/gallery-img-2.jpg" alt="Image 4">
+              </div>
+          </div>
+      </section>
+
+      <!-- Video Gallery -->
+      <section class="gallery-section">
+          <div class="section-header">
+              <h2 class="section-title">Video Gallery</h2>
+              <button class="view-all-btn">View All</button>
+          </div>
+          <div class="gallery-grid">
+              <div class="gallery-item video-item">
+                  <iframe src="https://www.youtube.com/embed/your-video-id" allowfullscreen></iframe>
+                  <div class="video-overlay">
+                      <span class="play-icon">▶</span>
+                  </div>
+              </div>
+              <div class="gallery-item video-item">
+                  <iframe src="https://www.youtube.com/embed/your-video-id" allowfullscreen></iframe>
+                  <div class="video-overlay">
+                      <span class="play-icon">▶</span>
+                  </div>
+              </div>
+              <div class="gallery-item video-item">
+                  <iframe src="https://www.youtube.com/embed/your-video-id" allowfullscreen></iframe>
+                  <div class="video-overlay">
+                      <span class="play-icon">▶</span>
+                  </div>
+              </div>
+              <div class="gallery-item video-item">
+                  <iframe src="https://www.youtube.com/embed/your-video-id" allowfullscreen></iframe>
+                  <div class="video-overlay">
+                      <span class="play-icon">▶</span>
+                  </div>
+              </div>
+          </div>
+      </section>
+  </div>
+
    <!-- Partner Start -->
    <div class="rs-partner p-32 gray-bg-color">
       <div class="container">
@@ -1650,6 +1699,17 @@
    <script src="assets/js/footer.js"></script>
    <script src="public/mapFiles/esir.js"></script>
    <script src="public/mapFiles/init.js"></script>
+
+
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+   <script>
+      AOS.init({
+         duration: 1000, // Animation duration in milliseconds
+         easing: "ease-in-out",
+         once: true // Animates only once when scrolling
+      });
+   </script>
 
 </body>
 
