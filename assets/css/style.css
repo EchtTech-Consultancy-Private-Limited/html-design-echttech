@@ -22208,7 +22208,7 @@ i.fas.fa-building {
       padding: 5px 3%;
 }
 
-.gallery-section {
+.dual-gallery-container .gallery-section {
   flex: 1;
   position: relative;
   padding: 20px 30px;
