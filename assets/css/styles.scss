@@ -4,9 +4,10 @@ $secondary-color: #fe5000;
 $text-dark-color: #212529;
 $bg-light-color: #f8f9fa;
 
-html{
+html {
   font-size: 16px;
 }
+
 /* General Styles */
 body {
   // font-family: Arial, sans-serif;
@@ -48,12 +49,22 @@ body {
       background-color: white;
       padding: 1px 20px;
       border-radius: 20px;
-      // border: 2px solid red;
     }
   }
 
   .right-top-header {
     display: flex;
+
+    .resize-btn {
+      border: none;
+      padding: 3px;
+      border-radius: 5px;
+      width: 35px;
+
+      &:hover {
+        background-color: rgb(209, 209, 209);
+      }
+    }
   }
 }
 
@@ -82,6 +93,27 @@ body {
   padding: 0px 50px;
   background-color: $primary-color;
 
+  .dropdown-menu {
+    display: block;
+    opacity: 0;
+    transform: translateY(-10px);
+    /* Moves dropdown 10px up */
+    visibility: hidden;
+    transition: opacity 0.3s ease, transform 0.3s ease, visibility 0.3s;
+  }
+
+  /* Show dropdown on hover with smooth animation */
+  .nav-item.dropdown:hover .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    /* Moves dropdown back to normal */
+    visibility: visible;
+  }
+
+  .dropdown-item {
+    color: black;
+  }
+
   a {
     color: white;
 
@@ -99,16 +131,18 @@ body {
   padding: 50px;
   display: flex;
   justify-content: space-between;
+  background-color: #effeff;
+
 
   .aboutus-section-container {
     width: 68%;
-    // background-color: #ffefd5;
+    background-color: white;
     padding: 0px 20px;
     color: black;
     border-radius: 15px;
     display: flex;
 
-    
+
     box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
 
 
@@ -155,6 +189,7 @@ body {
     height: 420px;
     padding: 10px 15px;
     color: black;
+    background-color: white;
     // border: 2px solid gray;
     border-radius: 15px;
     display: flex;
@@ -168,9 +203,11 @@ body {
       width: 100%;
       text-align: center;
       padding: 10px 0px;
+
       span {
         color: $secondary-color;
       }
+
       border-bottom: 3px solid $secondary-color;
     }
 
@@ -377,18 +414,22 @@ body {
 
 
 // ----------------------------- service card end ----------------------------------
-// ----------------------------- social meida start ----------------------------------
+// ----------------------------- social media start ----------------------------------
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css");
 
 .social-media-section {
   padding: 50px 0;
   text-align: center;
-  background: url(/assets/images/press-release.png);
+  // background: url(/assets/images/press-release.png);
+  background-color: #FFF5E9;
 
 
-  .one-card{
+  .one-card {
     width: 23%;
     padding: 0px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    border-radius: 10px;
+
     .card {
       padding: 8px 8px;
       border-radius: 0px;
@@ -398,26 +439,27 @@ body {
       text-align: center;
       transition: transform 0.3s ease-in-out;
       cursor: pointer;
-  
+
       .card-logo {
         display: flex;
         align-items: center;
         justify-content: center;
         flex-direction: row;
-  
+
         i {
-          font-size: 25px;
-          margin-bottom: 10px;
+          font-size: 22px;
+          // margin-bottom: 10px;
           margin-right: 10px;
         }
-  
+
         h4 {
           font-size: 18px;
           font-weight: bold;
+          margin-bottom: 0px;
         }
       }
     }
-  
+
     .card-content {
       // border: 2px solid rgb(175, 175, 175);
       height: 300px;
@@ -429,7 +471,7 @@ body {
     }
   }
 
-  
+
 
   .facebook {
     background: linear-gradient(135deg, #1877f2, #4c8bf5);

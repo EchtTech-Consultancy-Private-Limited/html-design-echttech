@@ -1,3 +1,4 @@
+
 $(document).ready(function () {
   $('.gallery-item').magnificPopup({
     type: 'image',
@@ -19,3 +20,4 @@ function resetSize() {
   let elements = document.documentElement;
   elements.style.fontSize = defaultSize + "px";
 };
+
