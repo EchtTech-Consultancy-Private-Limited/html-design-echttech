@@ -2418,7 +2418,7 @@ li.languageCont:hover ul.language-text, .social-icons-btn:hover .language-text.s
     align-items: center;
     justify-content: center;
     border-radius: 4px;
-    background-color:  #ad00350a;
+    background-color: #f4edef;
 }
 .accessiblelinks.textSizing ul li button:hover, .accessiblelinks.textSizing ul li button.active {
   background-color:  #ad0035;
@@ -17523,7 +17523,7 @@ img.about-image-bottom {
 }
 
 .rs-footer.home9-style.main-home {
-  background: #ad0035;
+  background: #700023;
 }
 
 .rs-footer.home9-style.main-home .footer-top .widget-title:before {
@@ -17615,7 +17615,7 @@ img.about-image-bottom {
 
 .rs-footer.home9-style.main-home .footer-bottom {
   padding: 11px 0 9px;
-  background: #93002d;
+  background: #000;
   position: relative;
 }
 
