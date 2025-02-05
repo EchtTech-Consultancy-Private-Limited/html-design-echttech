@@ -88,7 +88,7 @@
 .banner_search_field a
 {
 	/* color:#df193a; */
-	color:#000080;
+	color:#0f7f95;
 }
 
 
@@ -205,7 +205,7 @@
 	/* background-color:#db261d; */
 	/* background-color:#cb2017; */
 	/* background-color:#742726; */
-	background-color:#000080;
+	background-color:#0f7f95;
 }
 
 
@@ -255,7 +255,7 @@
 .banner_search_field a:hover,
 .theam_btn:hover
 {
-	background-color:#14284b;
+	background-color:#0f7f95b0;
 }
 /*
 	  ============================================================
@@ -317,7 +317,7 @@
 .city_top_social ul li a:hover
 {
 	/* border-color:#df193a; */
-	border-color:#000080;
+	border-color:#0f7f95;
 }
 
 
@@ -572,9 +572,9 @@ textarea,
 	background-color:#333;
 }
 .border-color{
-	border-color:#14284b;
+	border-color: #0f7f95;
 }
 .color{
 	/* color:#14284b; */
-	color:#01396c;
+	color: #096e83;
 }
