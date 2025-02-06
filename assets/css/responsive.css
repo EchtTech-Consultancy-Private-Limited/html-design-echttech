@@ -310,8 +310,11 @@
     }
 
     .full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li {
-        margin-right: 10px !important;
-        margin-left: 10px;
+        margin-right: 4px !important;
+        margin-left: 4px;
+    }
+    .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li.menu-item-has-children a {
+        padding: 2px 30px 2px 12px;
     }
 }
 
