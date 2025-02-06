@@ -3804,11 +3804,12 @@ a.portgolio-button:hover {
 	height: 100px;
 	margin: 30px 0 40px;
 	transition: all .3s ease-in-out;
+	
 }
 
-.clientail .flexslider .slides li a:hover {
-	transform: scale(.9);
-}
+/* .clientail .flexslider .slides li a:hover {
+	transform: scale(.8);
+} */
 
 .clientail .flexslider .slides img {
 	height: auto;
@@ -7463,6 +7464,10 @@ h1 {
 	opacity: 1;
 }
 
+#video .gallery-item:hover .gallery-caption {
+    opacity: 0;
+}
+
 /* styling for dark and light mode button */
 .switch {
 	margin: auto;
@@ -7669,5 +7674,27 @@ li.gov-india.timer-date-c {
 	.pause-button svg {
 		width: 20px;
 		height: 20px;
+	}
+}
+
+@media only screen and (max-width: 1450px) {
+	.clientail .flexslider .slides li a{
+		transform: scale(.7);
+	}
+	.clientail .flexslider .slides li a:hover {
+		transform: scale(.8);
+	}
+	.flexslider:hover .flex-direction-nav .flex-prev {
+		left: -15px !important;
+	}
+	.clientail .flexslider:hover .flex-direction-nav .flex-next {
+		right: -15px !important;
+	}
+	.clientail .flexslider:hover .flex-direction-nav .flex-prev, .clientail .flexslider:hover .flex-direction-nav .flex-next{
+		top: -118px !important;
+	}
+	.flex-direction-nav a:before {
+		font-family: "flexslider-icon";
+		font-size: 34px;
 	}
 }
