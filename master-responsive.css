@@ -120,4 +120,10 @@
 
 }
 
+@media screen and (min-width: 1530px) and (max-width: 1750px) {
+    .city_main_banner .slick-prev {
+        left: 85.8% !important;
+    }
+}
+
   
