@@ -2297,8 +2297,8 @@ li.languageCont:hover ul.language-text, .social-icons-btn:hover .language-text.s
   fill: #000000;
 }
 .toolbar-sl-share li img {
-  width: 18px;
-  height: 18px;
+  width: 22px;
+  height: 22px;
 }
 .toolbar-sl-share li svg path {
   color: #fff;
@@ -2310,9 +2310,9 @@ li.languageCont:hover ul.language-text, .social-icons-btn:hover .language-text.s
 .full-width-header .rs-header .topbar-area.home11-topbar .toolbar-sl-share li:hover svg path{
   fill: #fff;
 }
-.full-width-header .rs-header .topbar-area.home11-topbar .toolbar-sl-share li:hover img{
+/* .full-width-header .rs-header .topbar-area.home11-topbar .toolbar-sl-share li:hover img{
   filter: invert();
-}
+} */
 
 .full-width-header .rs-header .topbar-area.home11-topbar .toolbar-sl-share li a:hover {
   color: #000000;
@@ -22165,7 +22165,7 @@ i.fas.fa-building {
   width: 70px;
   height: 70px;
   /* background: linear-gradient(45deg,  #ad0035, #e9487c); */
-  border-radius: 18px;
+  border-radius: 50px;
   display: flex;
   background-color: #f8f1f3;
   align-items: center;

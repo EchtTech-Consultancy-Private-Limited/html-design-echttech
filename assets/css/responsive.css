@@ -308,8 +308,15 @@
     }
 
     .full-width-header.home1-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li {
-        margin-right: 12px !important;
-        margin-left: 18px;
+        margin-right: 6px !important;
+        margin-left: 10px;
+    }
+    .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li.menu-item-has-children a {
+        padding: 5px 30px 37px 10px;
+        height: 40px;
+    }
+    .full-width-header.header-style1.home12-modifiy .rs-header .menu-area .rs-menu-area .main-menu .rs-menu ul.nav-menu li:first-child a {
+        padding: 5px 5px 8px 0px !important;
     }
 }
 
