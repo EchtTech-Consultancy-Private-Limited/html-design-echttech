@@ -158,6 +158,10 @@ body {
       img {
         width: 200px;
         margin: 10px;
+
+        box-shadow:
+          -44px -44px 0 -40px $secondary-color,
+          44px 44px 0 -40px $secondary-color;
       }
     }
 
@@ -295,75 +299,73 @@ body {
 
 /* --------------------------------- about us end  -------------------------*/
 // --------------------------------- serivce card  -------------------------
-.service-section {
-  padding: 0px 50px;
-  padding-bottom: 40px;
+// .service-section {
+//   padding: 0px 50px;
+//   padding-bottom: 40px;
 
-  h2 {
-    font-weight: bold;
-    text-align: center;
-    margin-bottom: 15px;
+//   h2 {
+//     font-weight: bold;
+//     text-align: center;
+//     margin-bottom: 15px;
 
-    span {
-      color: $secondary-color;
-    }
-  }
+//     span {
+//       color: $secondary-color;
+//     }
+//   }
 
-  .service-card {
-    background: #eef4ff;
-    // background: linear-gradient(135deg, #ff7e5f, #feb47b);
-    // background: linear-gradient(90deg, rgba(0,142,170,1) 0%, rgba(255,255,255,1) 100%);
-    // background-image: linear-gradient(to top, #a99aea 0%, #ebeaee 100%);
-    // background-image: linear-gradient(to top, #fc0b0b 0%, #0026ff 100%);
-    // background: linear-gradient(rgb(227, 221, 255) 36.69%, rgb(169, 154, 234) 89.14%);
-    padding: 20px;
-    border-radius: 12px;
-    text-align: left;
-    transition: all 0.3s ease-in-out;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
-    display: flex;
-    align-items: center;
+//   .service-card {
+//     background: #eef4ff;
+//     // background: linear-gradient(135deg, #ff7e5f, #feb47b);
+//     // background: linear-gradient(90deg, rgba(0,142,170,1) 0%, rgba(255,255,255,1) 100%);
+//     // background-image: linear-gradient(to top, #a99aea 0%, #ebeaee 100%);
+//     // background-image: linear-gradient(to top, #fc0b0b 0%, #0026ff 100%);
+//     // background: linear-gradient(rgb(227, 221, 255) 36.69%, rgb(169, 154, 234) 89.14%);
+//     padding: 20px;
+//     border-radius: 12px;
+//     text-align: left;
+//     transition: all 0.3s ease-in-out;
+//     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
+//     display: flex;
+//     align-items: center;
 
-    &:hover {
-      box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
-      position: relative;
-      top: -5px;
-    }
+//     &:hover {
+//       box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
+//       position: relative;
+//       top: -5px;
+//     }
 
-    .icon {
-      font-size: 40px;
-      color: #4a90e2;
-      margin: 10px;
-    }
+//     .icon {
+//       font-size: 40px;
+//       color: #4a90e2;
+//       margin: 10px;
+//     }
 
-    .info {
-      // border: 2px solid gray;
-      padding: 5px;
+//     .info {
+//       // border: 2px solid gray;
+//       padding: 5px;
 
-      h5 {
-        font-weight: 700;
-        color: #333;
-        margin-bottom: 10px;
-      }
+//       h5 {
+//         font-weight: 700;
+//         color: #333;
+//         margin-bottom: 10px;
+//       }
 
-      p {
-        color: #555;
-        font-size: 14px;
-      }
-    }
-  }
-}
+//       p {
+//         color: #555;
+//         font-size: 14px;
+//       }
+//     }
+//   }
+// }
 
 // ----------------------------- service card 2 ----------------------------------
 .service-section2 {
   position: relative;
-  // border: 2px solid red;
   background-color: #eeecf9;
-  height: 500px;
+  height: 515px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  // justify-content: space-evenly;
 
   .card-wrapper {
     width: 1100px;
@@ -375,35 +377,51 @@ body {
       display: flex;
       align-items: center;
       justify-content: space-evenly;
-      transition: transform .4s;
+      transition: transform 0.3s ease-in-out;
 
-      img {
-        &:hover {
-          -ms-transform: scale(1.1);
-          /* IE 9 */
-          -webkit-transform: scale(1.1);
-          /* Safari 3-8 */
-          transform: scale(1.1);
-        }
+      &:hover {
+        transform: scale(1.05);
       }
     }
   }
 
-
-
   .btn1 {
-    // border: 2px solid blue;
     background-color: $secondary-color;
-    border-radius: 30px;
+    /* Ensure $secondary-color is defined */
+    border-radius: 50%;
     border: none;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+    transition: background 0.3s ease, transform 0.2s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+
+    &:hover {
+      background-color: #e94a00
+    }
   }
+
+  .prev-btn,
+  .next-btn {
+    margin: 0 10px;
+  }
+
+  .prev-btn i,
+  .next-btn i {
+    font-size: 20px;
+  }
+
 
   .overlay {
     z-index: 1;
     position: absolute;
     bottom: 30px;
     width: 90%;
-    height: 228px;
+    height: 250px;
     background: $primary-color;
     border-radius: 20px;
     opacity: 0.8;
@@ -462,7 +480,7 @@ body {
 
     .card-content {
       // border: 2px solid rgb(175, 175, 175);
-      height: 300px;
+      height: 320px;
       background-color: white;
       border-bottom-right-radius: 12px;
       border-bottom-left-radius: 12px;
@@ -543,10 +561,36 @@ body {
     margin-bottom: 20px;
     transition: transform 0.3s ease-in-out;
 
-    img {
-      width: 100%;
-      height: auto;
-      border-radius: 10px;
+    .image-container {
+      position: relative;
+      // display: inline-block;
+
+      img {
+        width: 100%;
+        display: block;
+        height: auto;
+        border-radius: 10px;
+      }
+
+      .hover-text {
+        position: absolute;
+        bottom: 10px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: rgba(0, 0, 0, 0.7);
+        color: #fff;
+        padding: 5px 10px;
+        font-size: 14px;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        width: 95%;
+        border-radius: 4px;
+
+      }
+
+      &:hover .hover-text {
+        opacity: 1;
+      }
     }
 
     &:hover {

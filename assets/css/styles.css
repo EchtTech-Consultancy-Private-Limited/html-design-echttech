@@ -136,6 +136,7 @@ body {
 .aboutus-section .aboutus-section-container .aboutus-section-container-img img {
   width: 200px;
   margin: 10px;
+  box-shadow: -44px -44px 0 -40px #fe5000, 44px 44px 0 -40px #fe5000;
 }
 .aboutus-section .aboutus-section-container .aboutus-section-container-info {
   width: 70%;
@@ -218,55 +219,10 @@ body {
 }
 
 /* --------------------------------- about us end  -------------------------*/
-.service-section {
-  padding: 0px 50px;
-  padding-bottom: 40px;
-}
-.service-section h2 {
-  font-weight: bold;
-  text-align: center;
-  margin-bottom: 15px;
-}
-.service-section h2 span {
-  color: #fe5000;
-}
-.service-section .service-card {
-  background: #eef4ff;
-  padding: 20px;
-  border-radius: 12px;
-  text-align: left;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
-  display: flex;
-  align-items: center;
-}
-.service-section .service-card:hover {
-  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.1);
-  position: relative;
-  top: -5px;
-}
-.service-section .service-card .icon {
-  font-size: 40px;
-  color: #4a90e2;
-  margin: 10px;
-}
-.service-section .service-card .info {
-  padding: 5px;
-}
-.service-section .service-card .info h5 {
-  font-weight: 700;
-  color: #333;
-  margin-bottom: 10px;
-}
-.service-section .service-card .info p {
-  color: #555;
-  font-size: 14px;
-}
-
 .service-section2 {
   position: relative;
   background-color: #eeecf9;
-  height: 500px;
+  height: 515px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -280,24 +236,43 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  transition: transform 0.4s;
+  transition: transform 0.3s ease-in-out;
 }
-.service-section2 .card-wrapper .card img:hover {
-  /* IE 9 */
-  /* Safari 3-8 */
-  transform: scale(1.1);
+.service-section2 .card-wrapper .card:hover {
+  transform: scale(1.05);
 }
 .service-section2 .btn1 {
   background-color: #fe5000;
-  border-radius: 30px;
+  /* Ensure $secondary-color is defined */
+  border-radius: 50%;
   border: none;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: white;
+  transition: background 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.service-section2 .btn1:hover {
+  background-color: #e94a00;
+}
+.service-section2 .prev-btn,
+.service-section2 .next-btn {
+  margin: 0 10px;
+}
+.service-section2 .prev-btn i,
+.service-section2 .next-btn i {
+  font-size: 20px;
 }
 .service-section2 .overlay {
   z-index: 1;
   position: absolute;
   bottom: 30px;
   width: 90%;
-  height: 228px;
+  height: 250px;
   background: #008eaa;
   border-radius: 20px;
   opacity: 0.8;
@@ -341,7 +316,7 @@ body {
   margin-bottom: 0px;
 }
 .social-media-section .one-card .card-content {
-  height: 300px;
+  height: 320px;
   background-color: white;
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
@@ -398,10 +373,31 @@ body {
   margin-bottom: 20px;
   transition: transform 0.3s ease-in-out;
 }
-.media-tabs .gallery-item img {
+.media-tabs .gallery-item .image-container {
+  position: relative;
+}
+.media-tabs .gallery-item .image-container img {
   width: 100%;
+  display: block;
   height: auto;
   border-radius: 10px;
+}
+.media-tabs .gallery-item .image-container .hover-text {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 5px 10px;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+  width: 95%;
+  border-radius: 4px;
+}
+.media-tabs .gallery-item .image-container:hover .hover-text {
+  opacity: 1;
 }
 .media-tabs .gallery-item:hover {
   transform: scale(1.05);
