@@ -5343,6 +5343,11 @@ button.dt-button.buttons-print:hover span {
 	right: 10px;
 	font-weight: 100;
 }
+li.end-end a::after {
+    content-visibility: hidden !important;
+    visibility: hidden !important;
+    content: '' !important;
+}
 
 .main-menu .sub-nav ul li.env.sub-menu-drop-g::after {
 	content: ' ' !important;
@@ -5737,17 +5742,17 @@ input:focus {
 .clientail .flexslider:hover .flex-direction-nav .flex-prev,
 .clientail .flexslider:hover .flex-direction-nav .flex-next,
 .carousel-wrapper.clientail #flexCarousel ul.flex-direction-nav li a:focus {
-	top: -127px !important;
+	top: -118px !important;
 	margin: 0;
 	height: 48px;
 }
 
 .flexslider:hover .flex-direction-nav .flex-prev {
-	left: -30px !important;
+	left: -35px !important;
 }
 
 .clientail .flexslider:hover .flex-direction-nav .flex-next {
-	right: -35px !important;
+	right: -40px !important;
 }
 
 .twitter-tweet.twitter-tweet-rendered {
