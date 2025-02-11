@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider with Play/Pause</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+    <style>
+        .slider {
+    width: 30%;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+}
+
+button {
+    background: white;
+    color: black;
+    border: none;
+    border-radius: 15px;
+    padding: 8px 16px;
+    min-width: 100px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.slick-slide {
+    background: blue;
+    color: white;
+    padding: 30px;
+    font-size: 30px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+}
+
+.slick-slide:nth-child(1),
+.slick-slide:nth-child(3) {
+    background: red;
+}
+
+.slick-prev:before, 
+.slick-next:before {
+    color: black;
+}
+
+    </style>
+</head>
+<body>
+
+    <section class="slider">
+        <div>slide1</div>
+        <div>slide2</div>
+        <div>slide3</div>
+        <div>slide4</div>
+    </section>
+
+    <div class="buttons">
+        <button id="toggle">Play</button>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+    let slider = $('.slider');
+
+    // Initialize Slick Slider
+    slider.slick({
+        autoplay: false,
+        autoplaySpeed: 2000,
+        dots: true,
+        arrows: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 3,
+        autoplay: false,
+        autoplaySpeed: 1000,
+    });
+
+    let isPlaying = false;
+
+    $('#toggle').on('click', function(){
+        if(isPlaying){
+            slider.slick('slickPause');
+            $(this).text('Play');
+        } else {
+            slider.slick('slickPlay');
+            $(this).text('Pause');
+        }
+        isPlaying = !isPlaying;
+    });
+});
+
+    </script>
+
+</body>
+</html>
