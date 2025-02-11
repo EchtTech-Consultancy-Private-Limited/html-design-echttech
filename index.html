@@ -389,34 +389,54 @@
         </div>
     </section>
     <section class="client-slider" >
-      <div class="slider">
-        <div class="slide-dynamic">
-          <img src="./assets/client-slider/client1.png" alt="">
+      <div class="rowsldr">
+        <div class="container-c-slider">
+          <div class="container">
+            <div class="row slider">
+              <div class="slide-dynamic">
+                <img src="./assets/client-slider/client1.png" alt="">
+              </div>
+              <div class="slide-dynamic">
+                <img src="./assets/client-slider/client2.png" alt="">
+      
+              </div>
+              <div class="slide-dynamic">
+                <img src="./assets/client-slider/client3.png" alt="">
+      
+              </div>
+              <div class="slide-dynamic">
+                <img src="./assets/client-slider/client4.png" alt="">
+      
+              </div>
+              <div class="slide-dynamic">
+                <img src="./assets/client-slider/client1.png" alt="">
+              </div>
+              <div class="slide-dynamic">
+                <img src="./assets/client-slider/client2.png" alt="">
+      
+              </div>
+              <div class="slide-dynamic">
+                <img src="./assets/client-slider/client2.png" alt="">
+      
+              </div>
+              <div class="slide-dynamic">
+                <img src="./assets/client-slider/client3.png" alt="">
+      
+              </div>
+              <div class="slide-dynamic">
+                <img src="./assets/client-slider/client4.png" alt="">
+      
+              </div>
+             
+          </div>
+          </div>
+          
         </div>
-        <div class="slide-dynamic">
-          <img src="./assets/client-slider/client2.png" alt="">
-
-        </div>
-        <div class="slide-dynamic">
-          <img src="./assets/client-slider/client3.png" alt="">
-
-        </div>
-        <div class="slide-dynamic">
-          <img src="./assets/client-slider/client4.png" alt="">
-
-        </div>
-        <div class="slide-dynamic">
-          <img src="./assets/client-slider/client1.png" alt="">
-        </div>
-        <div class="slide-dynamic">
-          <img src="./assets/client-slider/client2.png" alt="">
-
-        </div>
-       
-    </div>
+      </div>
+     
 
     <div class="buttons mt-3">
-        <button id="toggle">Play</button>
+        <button id="toggle"> <i class="bi bi-pause"></i> </button>
     </div>
     </section>
     <footer>
@@ -592,10 +612,10 @@ responsive: {
     $('#toggle').on('click', function(){
         if(isPlaying){
             slider.slick('slickPause');
-            $(this).text('Play');
+            $(this).html('<i class="bi bi-play"></i>');
         } else {
             slider.slick('slickPlay');
-            $(this).text('Pause');
+            $(this).html('<i class="bi bi-pause"></i>');
         }
         isPlaying = !isPlaying;
     });
